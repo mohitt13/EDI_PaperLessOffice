@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Table</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="img/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="static/css/util1.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main1.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100">
+					<table>
+						<thead>
+							<tr class="table100-head">
+								<!-- <th class="column1">User-id</th> -->
+								<th class="column2">Aadhar Number</th>
+								<th class="column3">User Name</th>
+							</tr>
+						</thead>
+						<tbody>
+							    {% for item in data %}
+								<tr>
+    								<!-- <td class="column1">{{item[0]}}</td> -->
+   								    <td class="column2">{{item._id}}</td>
+   								    <td class="column3">{{item.name}}</td>
+   								</tr>
+								{% endfor %}
+				    	</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
